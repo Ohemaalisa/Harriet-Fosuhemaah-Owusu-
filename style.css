@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f8f8f8;
+  color: #333;
+}
+
+nav {
+  background: #09a3b8e1;
+  padding: 20px;
+  text-align: right;
+  position: sticky;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration:solid;
+}
+nav a:hover {
+background-color: rgb(75, 255, 90);
+}
+
+.hero {
+  height: 100vh;
+  background: url('assets/church3.jpg') center/cover no-repeat;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.overlay h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 12px 35px;
+  background: white;
+  color: black;
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: gold;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade 1.5s forwards;
+}
+
+.delay { animation-delay: 0.5s; }
+.delay2 { animation-delay: 1s; }
+
+@keyframes fade {
+  to { opacity: 1; }
+}
+
+.container {
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.video iframe {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.services li {
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
